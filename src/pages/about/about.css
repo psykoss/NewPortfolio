@@ -20,7 +20,7 @@
 .personalImage img {
   height: 250px;
   z-index: 50;
-  border-radius: 250px;
+  border-radius: 0px;
   border: 1px solid var(--grey);
 }
 
