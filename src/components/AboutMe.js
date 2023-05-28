@@ -51,7 +51,7 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
         >
           <div className="contentContainer">
             <h4>Nice to meet you</h4>
-            <h5>I'm Daniel Totolici a Data Science Student at UC3M!</h5>
+            <h5>I'm Roberto Daniel Totolici a Data Science Student at UC3M!</h5>
             <div className="contentDescription">
               <p>{brand}</p>
             </div>
