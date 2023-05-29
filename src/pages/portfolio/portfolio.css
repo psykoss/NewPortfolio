@@ -10,10 +10,11 @@
 }
 
 .projectCard {
-  color: white;
-  border-radius: 3px;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
   margin-bottom: 20px;
   overflow: hidden;
+
   position: relative;
   transition: all 0.5s ease-in-out;
   flex-direction: column;
@@ -36,8 +37,10 @@
 }
 
 .imageContainer img {
-  height: 12em;
-  margin-top: 25px;
+  height: 10em;
+  margin-top: 0px;
+  margin-bottom: 25px;
+
   transition: all 1.3s ease-in-out;
 }
 
@@ -47,11 +50,11 @@
 }
 
 .viewWork {
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .projectTitle {
-  font-size: 24px;
+  font-size: 34px;
   padding: 10px 0;
 }
 
@@ -98,6 +101,7 @@
     flex-direction: row;
     padding: var(--sm-spacing) !important;
     height: 350px;
+    width: 350px;
   }
 
   .portfolio {
@@ -111,7 +115,8 @@
   }
 
   .projectCard:hover .imageContainer {
-    transform: translateX(-70%);
+    transform: translateX(-85%);
+    margin-top: 20px;
   }
 
   .projectCard:hover .textWrap {
@@ -136,12 +141,12 @@
   }
 
   .projectTitle {
-    font-size: 30px;
+    font-size: 40px;
     padding: 10px 0;
   }
 
   .viewWork {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .tech {

@@ -3,12 +3,12 @@
   {
     "title": "Financial Analysis",
     "image": "./projectImages/weather.png",
-    "technologies": "Python | Pandas | Matplotlib",
+    "technologies": "",
     "description": "",
     "github": "https://github.com/",
     "deployed": "https:/",
     "bgcolor": "#29cbe0",
-    "id": "2"
+    "id": "1"
   }
 
 ]

@@ -28,6 +28,7 @@ const NavLinks = () => {
         <NavLink to="/contact" onClick={() => setIsMenuOpen(false)}>
           Contact
         </NavLink>
+
       </nav>
     </>
   );

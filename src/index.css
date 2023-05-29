@@ -3,7 +3,7 @@
 /* --- VARIABLES --- */
 :root {
   --bg-color: #101010;
-  --hl-color: #00e1ff;
+  --hl-color: #ff6f00;
   --text-color: #f3f3f3;
   --secondary-text-color: #9f9f9f;
   --grey: #9f9f9f76;
@@ -82,7 +82,7 @@ body {
 }
 
 .btn:hover {
-  background-color: #03b979;
+  background-color: #00d0ff;
 }
 
 /* --- MOBILE STYLES --- */

@@ -3,7 +3,7 @@ import AnimatedRoutes from "./components/AnimatedRoutes";
 
 function App() {
   const personalDetails = {
-    name: "Roberto Totolici",
+    name: "Daniel Totolici",
     location: "Madrid ,Spain",
     email: "nablabussiness@gmail.com",
     availability: "Open for work",

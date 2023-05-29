@@ -71,7 +71,7 @@ const Landing = ({ name }) => {
           transition={{ duration: 1, ease: "easeInOut" }}
           style={styles.landingImage}
           src={landingImage}
-          alt="Michael Yeates"
+          alt="Daniel Totolici"
         />
       </div>
       <SocialIcons />
