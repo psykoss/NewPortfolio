@@ -1,11 +1,11 @@
 [
 
   {
-    "title": "Financial Analysis",
+    "title": "Supervised Machine Learning for Iris Classification",
     "image": "./projectImages/weather.png",
     "technologies": "",
     "description": "",
-    "github": "https://github.com/",
+    "github": "https://github.com/psykoss/Supervised-Learning-for-Bidimensional-Characteristics",
     "deployed": "https:/",
     "bgcolor": "#29cbe0",
     "id": "1"
