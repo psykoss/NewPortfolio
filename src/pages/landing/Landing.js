@@ -51,13 +51,13 @@ const Landing = ({ name }) => {
             className="description"
             onInit={(typewriter) => {
               typewriter
-                .typeString("Data scientist student")
+                .typeString("Data science student")
                 .pauseFor(1600)
                 .deleteAll()
-                .typeString("Entrepeneur")
+                .typeString("Creative Thinker")
                 .pauseFor(1500)
                 .deleteAll()
-                .typeString("Bringing your data to real decisions")
+                .typeString("Deep learning Enthusiast")
                 .start();
             }}
           />

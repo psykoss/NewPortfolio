@@ -8,7 +8,7 @@ function App() {
     email: "nablabussiness@gmail.com",
     availability: "Open for work",
     brand:
-      "My unique blend of technical expertise, creative thinking, and background in psychology allows me to approach each project with a deep understanding of the end user's perspective, resulting in highly effective user-centred digital products.",
+      "My combination of technical knowledge and innovative thought enables me to deeply comprehend the challenges of each project, leading to the creation of highly efficient solutions.",
   };
 
   return (

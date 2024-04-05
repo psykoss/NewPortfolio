@@ -37,7 +37,7 @@
 }
 
 .imageContainer img {
-  height: 10em;
+  height: 20em;
   margin-top: 0px;
   margin-bottom: 25px;
 
@@ -100,8 +100,8 @@
   .projectCard {
     flex-direction: row;
     padding: var(--sm-spacing) !important;
-    height: 350px;
-    width: 350px;
+    height: 750px;
+    width: 750px;
   }
 
   .portfolio {
@@ -115,7 +115,7 @@
   }
 
   .projectCard:hover .imageContainer {
-    transform: translateX(-85%);
+    transform: translateX(-60%);
     margin-top: 20px;
   }
 
