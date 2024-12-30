@@ -1,52 +1,47 @@
 [
   {
     "title": "Traffic Sign Image Classifier",
-    "image": "./projectImages/weather.png",
-    "technologies": "Convolutional Neural Networks, Tensorflow",
+    "image": "./projectImages/traffic.png",
+    "technologies": "",
     "description": "",
     "github": "https://github.com/psykoss/Traffic_Sign_CNN_Image_Classifier",
-    "deployed": "https:/",
-    "bgcolor": "#29cbe0",
+    "bgcolor": "#ffff",
     "id": "1"
   },
   {
     "title": "Covid 19 and Pneumonia Image Classifier",
-    "image": "./projectImages/weather.png",
-    "technologies": "Convolutional Neural Network, ResNet18, Tensorflow",
+    "image": "./projectImages/covid.png",
+    "technologies": "",
     "description": "",
     "github": "https://github.com/psykoss/Covid19ImageClassifierModel",
-    "deployed": "https:/",
-    "bgcolor": "#708090",
+    "bgcolor": "#ffff",
     "id": "2"
   },
   {
     "title": "Ad Click Prediction XG Boost",
-    "image": "./projectImages/weather.png",
-    "technologies": "Random Forest",
+    "image": "./projectImages/click.png",
+    "technologies": "",
     "description": "",
     "github": "https://github.com/psykoss/ad_click_xg_boost_model_predictor",
-    "deployed": "https:/",
-    "bgcolor": "#ffd700",
+    "bgcolor": "#ffff",
     "id": "3"
   },
   {
     "title": "Credit Card Customer Segmentation",
-    "image": "./projectImages/weather.png",
-    "technologies": "PCA, Clustering, sklearn",
+    "image": "./projectImages/seg.png",
+    "technologies": "",
     "description": "",
     "github": "https://github.com/psykoss/Bank_Costumer_Segmentation",
-    "deployed": "https:/",
-    "bgcolor": "#000080",
+    "bgcolor": "#ffff",
     "id": "4"
   },
   {
     "title": "Melanoma Image Classifier",
-    "image": "./projectImages/weather.png",
-    "technologies": "Convolutional Neural Networks, Tensorflow",
+    "image": "./projectImages/melanoma.png",
+    "technologies": "",
     "description": "",
     "github": "https://github.com/psykoss/Melanona_CNN",
-    "deployed": "https:/",
-    "bgcolor": "#fffdd0",
+    "bgcolor": "#ffff",
     "id": "5"
   }
 ]

@@ -10,146 +10,34 @@
 }
 
 .projectCard {
-  color: rgb(255, 255, 255);
-  border-radius: 20px;
-  margin-bottom: 20px;
+  background-color: #505051;
+  border-radius: 16px;
+  margin-bottom: 24px;
   overflow: hidden;
-
   position: relative;
-  transition: all 0.5s ease-in-out;
-  flex-direction: column;
-  padding: 0 !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-height: 200px;
+  padding: 0 16px; /* Add padding on both sides */
 }
 
-.row {
-  padding: 0;
-  margin: 0;
+.projectCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
-.textWrap {
-  transition: all 0.9s ease-in-out;
-  z-index: 1;
+.imageContainer {
+  flex: 0 0 40%;
+  overflow: hidden;
 }
 
-.projectLink {
-  text-decoration: none;
-}
-
-.imageContainer img {
-  height: 20em;
-  margin-top: 0px;
-  margin-bottom: 25px;
-
-  transition: all 1.3s ease-in-out;
-}
-
-.tech {
-  font-size: 12px;
-  white-space: nowrap;
-}
-
-.viewWork {
-  font-size: 20px;
-}
-
-.projectTitle {
-  font-size: 34px;
-  padding: 10px 0;
-}
-
-.githubLink {
-  text-decoration: none;
-}
-
-.projectCard::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  opacity: 0.3;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.closeModal {
-  margin-left: 250px;
-  margin-top: -20px;
-}
-
-.closeModal:hover {
-  filter: brightness(100);
-}
-
-.modalTitle {
-  text-align: center;
-  margin-bottom: 10px;
-  color: white;
-}
-
-.projectDescription {
-  margin-bottom: 10px;
-}
-
-/* --- MEDIA QUEIRES --- */
-
-@media (min-width: 750px) {
+/* --- WEB VIEW STYLES --- */
+@media (min-width: 768px) {
   .projectCard {
-    flex-direction: row;
-    padding: var(--sm-spacing) !important;
-    height: 750px;
-    width: 750px;
-  }
-
-  .portfolio {
-    padding-left: var(--spacing);
-    padding-right: var(--spacing);
-  }
-
-  .imageContainer {
-    transform: translateX(30%);
-    transition: all 0.3s ease-in-out;
-  }
-
-  .projectCard:hover .imageContainer {
-    transform: translateX(-60%);
-    margin-top: 20px;
-  }
-
-  .projectCard:hover .textWrap {
-    transform: translateX(-250%);
-  }
-
-  .projectCard:hover::before {
-    opacity: 0;
-  }
-
-  .projectCard:hover .imageContainer img {
-    scale: 1.4;
-  }
-
-  .imageContainer {
-    transform: translateX(30%);
-    transition: all 0.3s ease-in-out;
-  }
-
-  .textWrap {
-    text-shadow: none;
-  }
-
-  .projectTitle {
-    font-size: 40px;
-    padding: 10px 0;
-  }
-
-  .viewWork {
-    font-size: 20px;
-  }
-
-  .tech {
-    font-size: 14px;
+    width: 80%; /* Make the containers smaller */
+    padding: 0 32px; /* Add padding on both sides */
   }
 }

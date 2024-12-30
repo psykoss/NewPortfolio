@@ -24,56 +24,204 @@ const Project = ({ technologies, title, image, color, id, github, deployed, desc
   return (
     <motion.div
       ref={ref}
-      className="col-sm-12 col-lg-6"
+      className="col-sm-12 col-md-6 col-lg-4 mb-4 px-4"
       variants={variants}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
       transition={{ duration: 0.4, ease: "easeInOut" }}
     >
       <div
-        style={{ backgroundColor: color }}
-        className="projectCard d-flex align-items-center justify-content-center p-5"
+        className="project-card"
         onClick={handleOpenModal}
+        style={{
+          backgroundColor: '#2d2d2d',
+          borderRadius: '16px',
+          boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+          cursor: 'pointer',
+          transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+          height: '400px',
+          display: 'flex',
+          flexDirection: 'column',
+          overflow: 'hidden'
+        }}
+        onMouseOver={(e) => {
+          e.currentTarget.style.transform = 'translateY(-5px)';
+          e.currentTarget.style.boxShadow = '0 6px 12px rgba(0, 0, 0, 0.15)';
+        }}
+        onMouseOut={(e) => {
+          e.currentTarget.style.transform = 'translateY(0)';
+          e.currentTarget.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+        }}
       >
-        <div className="textWrap col-6 d-flex flex-column justify-content-center align-items-center m-5">
-          <p className="tech">
-            <em>{technologies}</em>
-          </p>
-          <h3 className="projectTitle">{title}</h3>
-          <span className="viewWork">View Work &#8594;</span>
+        <div className="image-container" style={{ height: '200px' }}>
+          <img 
+            src={image} 
+            alt="Project preview"
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover'
+            }}
+          />
         </div>
-        <div className="imageContainer col-6 d-flex align-items-center justify-content-center">
-          <img src={image} alt="Laptop displaying the application" />
+        
+        <div className="content-container" style={{ 
+          padding: '1.5rem',
+          display: 'flex',
+          flexDirection: 'column',
+          height: 'calc(100% - 200px)'
+        }}>
+          <div className="tech-tag" style={{ color: color, marginBottom: '8px' }}>
+            <em>{technologies}</em>
+          </div>
+          
+          <h2 className="project-title mb-2" style={{ 
+            fontSize: '1.5rem',
+            fontWeight: 'bold',
+            color: '#ffffff'
+          }}>
+            {title}
+          </h2>
+          
+          <p className="project-description mb-3" style={{
+            color: '#e0e0e0',
+            fontSize: '0.9rem',
+            lineHeight: '1.6',
+            flex: '1',
+            overflow: 'hidden',
+            display: '-webkit-box',
+            WebkitLineClamp: '3',
+            WebkitBoxOrient: 'vertical',
+            textOverflow: 'ellipsis'
+          }}>
+            {description}
+          </p>
+          
+          <div className="project-links" style={{ marginTop: 'auto' }}>
+            <button 
+              className="view-more"
+              style={{
+                background: color,
+                color: '#000000',
+                border: 'none',
+                padding: '8px 16px',
+                borderRadius: '8px',
+                fontSize: '0.9rem',
+                width: '100%',
+                fontWeight: '500'
+              }}
+            >
+              Read More →
+            </button>
+          </div>
         </div>
       </div>
+
       <Modal
         isOpen={showModal}
         onRequestClose={handleCloseModal}
         style={{
-          content: {
-            backgroundColor: "#101010",
-            color: "#9f9f9f",
-            padding: "60px",
-            display: "flex",
-            flexDirection: "column",
-            width: "400px",
-            top: "50%",
-            left: "50%",
-            right: "auto",
-            bottom: "auto",
-            marginRight: "-50%",
-            transform: "translate(-50%, -50%)",
-            zIndex: "999",
+          overlay: {
+            backgroundColor: 'rgba(0, 0, 0, 0.75)',
+            zIndex: 1000
           },
+          content: {
+            top: '50%',
+            left: '50%',
+            right: 'auto',
+            bottom: 'auto',
+            marginRight: '-50%',
+            transform: 'translate(-50%, -50%)',
+            backgroundColor: '#2d2d2d',
+            borderRadius: '16px',
+            padding: '2rem',
+            maxWidth: '600px',
+            width: '90%'
+          }
         }}
       >
-        <img src={closeModal} className="closeMenu closeModal" onClick={handleCloseModal} alt="Close"></img>
-        <h3 className="modalTitle">{title}</h3>
-        <p className="projectDescription">{description}</p>
-        <button className="btn" onClick={() => (window.location.href = github)}>
-          GitHub Repo
+        <button
+          onClick={handleCloseModal}
+          style={{
+            position: 'absolute',
+            top: '1rem',
+            right: '1rem',
+            background: 'none',
+            border: 'none',
+            cursor: 'pointer'
+          }}
+        >
+          <img src={closeModal} alt="Close" style={{ width: '20px', height: '20px' }} />
         </button>
 
+        <img 
+          src={image} 
+          alt="Project preview"
+          style={{
+            width: '100%',
+            height: '300px',
+            objectFit: 'cover',
+            borderRadius: '12px',
+            marginBottom: '1.5rem'
+          }}
+        />
+
+        <h2 style={{ 
+          fontSize: '2rem',
+          fontWeight: 'bold',
+          color: '#ffffff',
+          marginBottom: '1rem'
+        }}>
+          {title}
+        </h2>
+
+        <p style={{
+          color: '#e0e0e0',
+          fontSize: '1rem',
+          lineHeight: '1.6',
+          marginBottom: '1.5rem'
+        }}>
+          {description}
+        </p>
+
+        <div style={{ display: 'flex', gap: '1rem' }}>
+          {github && (
+            <a
+              href={github}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                background: color,
+                color: '#000000',
+                padding: '8px 16px',
+                borderRadius: '8px',
+                textDecoration: 'none',
+                fontSize: '1rem',
+                fontWeight: '500'
+              }}
+            >
+              View on GitHub
+            </a>
+          )}
+          {deployed && (
+            <a
+              href={deployed}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                background: color,
+                color: '#000000',
+                padding: '8px 16px',
+                borderRadius: '8px',
+                textDecoration: 'none',
+                fontSize: '1rem',
+                fontWeight: '500'
+              }}
+            >
+              Live Demo
+            </a>
+          )}
+        </div>
       </Modal>
     </motion.div>
   );
