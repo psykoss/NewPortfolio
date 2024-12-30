@@ -1,10 +1,19 @@
 [
 
   {
+    "title": "Traffic Signal Classifier",
+    "image": "./projectImages/traf.png",
+    "technologies": "",
+    "description": "A traffic signal classifier using a convolutional neural network ",
+    "github": "https://github.com/psykoss/Covid19ImageClassifierModel",
+    "bgcolor": "#ffff",
+    "id": "1"
+  },
+  {
     "title": "Covid 19 and Pneumonia Image Classifier",
     "image": "./projectImages/covid.png",
     "technologies": "",
-    "description": "",
+    "description": "A Covid 19 and Pneumonia image classifier using a convolutional neural network",
     "github": "https://github.com/psykoss/Covid19ImageClassifierModel",
     "bgcolor": "#ffff",
     "id": "2"
@@ -13,7 +22,7 @@
     "title": "Ad Click Prediction XG Boost",
     "image": "./projectImages/click.png",
     "technologies": "",
-    "description": "",
+    "description": "Predicting if a user will click on an ad using XG Boost model",
     "github": "https://github.com/psykoss/ad_click_xg_boost_model_predictor",
     "bgcolor": "#ffff",
     "id": "3"
@@ -22,7 +31,7 @@
     "title": "Credit Card Customer Segmentation",
     "image": "./projectImages/seg.png",
     "technologies": "",
-    "description": "",
+    "description": "Understanding the customer segments of a bank using KMeans clustering",
     "github": "https://github.com/psykoss/Bank_Costumer_Segmentation",
     "bgcolor": "#ffff",
     "id": "4"
@@ -31,7 +40,7 @@
     "title": "Melanoma Image Classifier",
     "image": "./projectImages/melanoma.png",
     "technologies": "",
-    "description": "",
+    "description": "A melanoma image classifier using a convolutional neural network",
     "github": "https://github.com/psykoss/Melanona_CNN",
     "deployed": "https:/",
     "bgcolor": "#ffff",
