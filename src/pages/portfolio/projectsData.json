@@ -1,7 +1,7 @@
 [
   {
     "title": "Traffic Sign Image Classifier",
-    "image": "./projectImages/traffic.png",
+    "image": "./projectImages/tre.png",
     "technologies": "",
     "description": "",
     "github": "https://github.com/psykoss/Traffic_Sign_CNN_Image_Classifier",
@@ -41,6 +41,7 @@
     "technologies": "",
     "description": "",
     "github": "https://github.com/psykoss/Melanona_CNN",
+    "deployed": "https:/",
     "bgcolor": "#ffff",
     "id": "5"
   }
