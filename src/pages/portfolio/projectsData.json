@@ -1,11 +1,5 @@
 [
-  {
-    "title": "Traffic Sign Image Classifier",
-    "image": "./projectImages/tre.png",
-    "github": "https://github.com/psykoss/Traffic_Sign_CNN_Image_Classifier",
-    "bgcolor": "#ffff",
-    "id": "6"
-  },
+
   {
     "title": "Covid 19 and Pneumonia Image Classifier",
     "image": "./projectImages/covid.png",
